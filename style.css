@@ -1,0 +1,162 @@
+/* General body text */
+body {
+	font-family: "Outfit", sans-serif;
+	line-height: 1.6;
+	background-color: hsl(330, 100%, 98%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+/* Main layout */
+main {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	max-width: 900px;
+	padding: 2rem;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Title */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-family: "Young Serif", serif;
+	font-size: 2.2rem;
+	color: #333;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+p {
+	font-family: "Outfit", sans-serif;
+	font-size: 1.1rem;
+	color: #666;
+	text-align: center;
+	max-width: 700px;
+}
+
+/* Section Headings */
+h3 {
+	font-family: "Young Serif", serif;
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 1rem;
+	margin-top: 1.5rem;
+}
+
+/* Lists (Ingredients and Instructions) */
+ul,
+ol {
+	font-family: "Outfit", sans-serif;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	color: #444;
+	padding-left: 20px;
+	margin-bottom: 1rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+/* Preparation time and nutrition info */
+span {
+	font-family: "Outfit", sans-serif;
+	font-weight: bold;
+	color: #444;
+}
+
+section {
+	background-color: #f8f2ff;
+	padding: 1.5rem;
+	border-radius: 10px;
+	margin-bottom: 1.5rem;
+}
+
+section h3 {
+	margin-top: 0;
+}
+
+/* Image Styling */
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	object-fit: cover;
+	margin-bottom: 2rem;
+}
+
+/* Nutrition Facts */
+.kcal,
+.carbs,
+.protein,
+.fat {
+	margin-right: 0;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.1rem;
+}
+
+/* Mobile Layout with Media Queries */
+@media (max-width: 768px) {
+	/* Main layout */
+	main {
+		width: 90%; /* Slightly increase width for better fit on mobile */
+		padding: 1.5rem;
+	}
+
+	/* Header */
+	h1 {
+		font-size: 1.8rem; /* Slightly smaller font size on mobile */
+		text-align: center;
+	}
+
+	p {
+		font-size: 1rem; /* Reduce font size for mobile */
+		text-align: left; /* Align text to left for better readability */
+	}
+
+	/* Section Headings */
+	h3 {
+		font-size: 1.3rem;
+	}
+
+	/* Lists */
+	ul,
+	ol {
+		font-size: 1rem;
+	}
+
+	/* Image Styling */
+	img {
+		width: 100%; /* Ensure the image spans the full width */
+		height: auto; /* Keep the aspect ratio */
+		border-radius: 15px;
+	}
+
+	/* Adjust the nutrition facts for mobile */
+	.nut ul {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.nut hr {
+		display: none; /* Hide horizontal lines for mobile */
+	}
+
+	.attribution {
+		text-align: center; /* Ensure attribution text is centered */
+	}
+}
